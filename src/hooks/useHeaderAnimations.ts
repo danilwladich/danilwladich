@@ -27,7 +27,7 @@ export function useHeaderAnimations(headerRef: React.RefObject<HTMLElement>, ful
 		function scrollAnimate() {
 			const scroll: number = window.pageYOffset;
 			const translateHeader: string = (40 - (40 / windowHeight * scroll)) + 'px';
-			const translateFullScreen: string = (700 / windowHeight * scroll) + 'px';
+			const translateFullScreen: string = (scroll / 3 * 2) + 'px';
 			if (scroll >= 0 && scroll < windowHeight) {
 				if (headerRef.current != null) {
 					headerRef.current.style.top = translateHeader;

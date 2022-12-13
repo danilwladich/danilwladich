@@ -136,9 +136,8 @@ button {
 .header__full-screen {
   z-index: 10;
   position: relative;
-  margin: -env(safe-area-inset-top) 0 0 0;
   width: 100%;
-  height: calc(100vh + env(safe-area-inset-top));
+  height: 100vh;
   overflow: hidden;
 }
 .header__full-screen img {
@@ -168,6 +167,13 @@ button {
   background-color: #014650;
   -webkit-box-shadow: 0 0 10px #000;
           box-shadow: 0 0 10px #000;
+  opacity: 0;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.header__bg.active {
+  opacity: 1;
 }
 .header__logo {
   position: absolute;

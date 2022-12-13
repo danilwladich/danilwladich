@@ -5,20 +5,21 @@ import { useHeaderAnimations } from '../hooks/useHeaderAnimations';
 export function Header() {
 	const headerRef = useRef<HTMLElement>(null)
 	const fullScreenRef = useRef<HTMLImageElement>(null)
+	const headerBgRef = useRef<HTMLDivElement>(null)
 	const aboutRef = useRef<HTMLButtonElement>(null)
 	const skillsRef = useRef<HTMLButtonElement>(null)
 	const worksRef = useRef<HTMLButtonElement>(null)
 	const hobbyRef = useRef<HTMLButtonElement>(null)
 
 
-	const { ScrollTo } = useHeaderAnimations(headerRef, fullScreenRef, aboutRef, skillsRef, worksRef, hobbyRef)
+	const { ScrollTo } = useHeaderAnimations(headerRef, fullScreenRef, headerBgRef, aboutRef, skillsRef, worksRef, hobbyRef)
 	useBurger()
 
 
 	return (
 		<>
 			<div className="header__full-screen"><img ref={fullScreenRef} src="img/main-page.jpg" alt="full-screen" /></div>
-			<div className="header__bg"></div>
+			<div ref={headerBgRef} className="header__bg"></div>
 			<header ref={headerRef} className="header">
 				<div className="container">
 					<nav className="header__menu">

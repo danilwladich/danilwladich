@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-export function useHeaderAnimations(headerRef: React.RefObject<HTMLElement>, fullScreenRef: React.RefObject<HTMLImageElement>, aboutRef: React.RefObject<HTMLButtonElement>, skillsRef: React.RefObject<HTMLButtonElement>, worksRef: React.RefObject<HTMLButtonElement>, hobbyRef: React.RefObject<HTMLButtonElement>) {
+export function useHeaderAnimations(headerRef: React.RefObject<HTMLElement>, fullScreenRef: React.RefObject<HTMLImageElement>, headerBgRef: React.RefObject<HTMLDivElement>, aboutRef: React.RefObject<HTMLButtonElement>, skillsRef: React.RefObject<HTMLButtonElement>, worksRef: React.RefObject<HTMLButtonElement>, hobbyRef: React.RefObject<HTMLButtonElement>) {
 	const ScrollTo = (props: string) => {
 		const element = document.querySelector<HTMLElement>(props);
 		if (element != null) {
@@ -27,18 +27,27 @@ export function useHeaderAnimations(headerRef: React.RefObject<HTMLElement>, ful
 		function scrollAnimate() {
 			const scroll: number = window.pageYOffset;
 			const translateHeader: string = (40 - (40 / windowHeight * scroll)) + 'px';
-			const translateFullScreen: string = (scroll / 3 * 2) + 'px';
+			const translateFullScreen: string = (scroll / 2) + 'px';
 			if (scroll >= 0 && scroll < windowHeight) {
-				if (headerRef.current != null) {
-					headerRef.current.style.top = translateHeader;
-				}
-				if (fullScreenRef.current != null) {
-					fullScreenRef.current.style.top = translateFullScreen;
-				}
+				window.requestAnimationFrame(() => {
+					if (headerRef.current != null) {
+						headerRef.current.style.top = translateHeader;
+					}
+					if (fullScreenRef.current != null) {
+						fullScreenRef.current.style.top = translateFullScreen;
+					}
+				})
 			}
 			if (scroll >= windowHeight) {
 				if (headerRef.current != null) {
 					headerRef.current.style.top = '0px';
+				}
+				if (headerBgRef.current != null) {
+					headerBgRef.current.classList.add('active')
+				}
+			} else {
+				if (headerBgRef.current != null) {
+					headerBgRef.current.classList.remove('active')
 				}
 			}
 		}
@@ -92,7 +101,7 @@ export function useHeaderAnimations(headerRef: React.RefObject<HTMLElement>, ful
 		}
 
 
-	}, [headerRef, fullScreenRef, aboutRef, skillsRef, worksRef, hobbyRef])
+	}, [headerRef, fullScreenRef, headerBgRef, aboutRef, skillsRef, worksRef, hobbyRef])
 
 
 	return { ScrollTo }

@@ -17,9 +17,9 @@ export function useHeaderAnimations(headerRef: React.RefObject<HTMLElement>, ful
 	useEffect(() => {
 
 
-		let windowHeight: number = Math.min(window.innerHeight, document.documentElement.clientHeight);
+		let windowHeight: number = Math.max(window.innerHeight, document.documentElement.clientHeight);
 		window.addEventListener('resize', () => {
-			windowHeight = Math.min(window.innerHeight, document.documentElement.clientHeight);
+			windowHeight = Math.max(window.innerHeight, document.documentElement.clientHeight);
 		});
 
 		scrollAnimate()

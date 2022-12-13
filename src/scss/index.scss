@@ -58,7 +58,7 @@ button {
 		overflow: hidden;
 		img {
 			width: 100%;
-			height: 100%;
+			height: 100vh;
 			object-fit: cover;
 			position: absolute;
 		}
@@ -694,6 +694,13 @@ button {
 		p:not(:last-child) {
 			padding: 0px 0px 15px 0px;
 		}
+		p{
+			opacity: 0.3;
+			transition: all 0.8s;
+			&.animate{
+				opacity: 1;
+			}
+		}
 	}
 	&__social {
 		display: flex;
@@ -704,6 +711,11 @@ button {
 			&:hover {
 				transform: scale(1.1);
 			}
+		}
+		opacity: 0.3;
+		transition: all 0.8s;
+		&.animate{
+			opacity: 1;
 		}
 	}
 	@media (min-width: 767px) {

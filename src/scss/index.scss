@@ -211,21 +211,21 @@ button {
 				box-shadow: 0 0 20px #000;
 			}
 			div {
-				// content: "";
 				position: absolute;
 				width: 200vw;
 				height: calc(100vh + env(safe-area-inset-top) + 115px);
 				top: -115px;
-				left: -15px;
+				left: 0;
 				background-color: rgba(0, 0, 0, 0.37);
 				z-index: -2;
 				transition: all 1s;
 				opacity: 0;
 				visibility: hidden;
 			}
-			transform: translateX(-120%);
+			left: -100vw;
 			transition: all 0.4s;
 			&.active {
+				left: 15px;
 				transform: translateX(0);
 				div {
 					opacity: 1;
@@ -694,10 +694,10 @@ button {
 		p:not(:last-child) {
 			padding: 0px 0px 15px 0px;
 		}
-		p{
+		p {
 			opacity: 0.3;
 			transition: all 0.8s;
-			&.animate{
+			&.animate {
 				opacity: 1;
 			}
 		}
@@ -714,7 +714,7 @@ button {
 		}
 		opacity: 0.3;
 		transition: all 0.8s;
-		&.animate{
+		&.animate {
 			opacity: 1;
 		}
 	}

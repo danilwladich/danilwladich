@@ -303,9 +303,7 @@ button {
     position: absolute;
     top: 75px;
     padding: 0px 50px 0px 0px;
-    -webkit-transform: translateX(-120%);
-        -ms-transform: translateX(-120%);
-            transform: translateX(-120%);
+    left: -100vw;
     -webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
     transition: all 0.4s;
@@ -327,7 +325,7 @@ button {
     width: 200vw;
     height: calc(100vh + env(safe-area-inset-top) + 115px);
     top: -115px;
-    left: -15px;
+    left: 0;
     background-color: rgba(0, 0, 0, 0.37);
     z-index: -2;
     -webkit-transition: all 1s;
@@ -337,6 +335,7 @@ button {
     visibility: hidden;
   }
   .header__menu.active {
+    left: 15px;
     -webkit-transform: translateX(0);
         -ms-transform: translateX(0);
             transform: translateX(0);

@@ -13,7 +13,7 @@ export function Header() {
 
 
 	const { ScrollTo } = useHeaderAnimations(headerRef, fullScreenRef, headerBgRef, aboutRef, skillsRef, worksRef, hobbyRef)
-	useBurger()
+	const {setActive} = useBurger()
 
 
 	return (
@@ -36,7 +36,7 @@ export function Header() {
 							<h1><span>D</span>anil<span>W</span>ladich</h1>
 						</button>
 					</nav>
-					<div className="header__burger">
+					<div className="header__burger" onClick={() => {setActive(prev => !prev)}}>
 						<span></span>
 					</div>
 				</div>

@@ -1,6 +1,7 @@
-import React, { useEffect } from 'react';
+import React, { useLayoutEffect } from 'react';
 
 export function useHeaderAnimations(headerRef: React.RefObject<HTMLElement>, fullScreenRef: React.RefObject<HTMLImageElement>, headerBgRef: React.RefObject<HTMLDivElement>, aboutRef: React.RefObject<HTMLButtonElement>, skillsRef: React.RefObject<HTMLButtonElement>, worksRef: React.RefObject<HTMLButtonElement>, hobbyRef: React.RefObject<HTMLButtonElement>) {
+	
 	const ScrollTo = (props: string) => {
 		const element = document.querySelector<HTMLElement>(props);
 		if (element != null) {
@@ -14,7 +15,7 @@ export function useHeaderAnimations(headerRef: React.RefObject<HTMLElement>, ful
 	}
 
 
-	useEffect(() => {
+	useLayoutEffect(() => {
 
 
 		let windowHeight: number = Math.max(window.innerHeight, document.documentElement.clientHeight);
@@ -22,7 +23,6 @@ export function useHeaderAnimations(headerRef: React.RefObject<HTMLElement>, ful
 			windowHeight = Math.max(window.innerHeight, document.documentElement.clientHeight);
 		});
 
-		scrollAnimate()
 		document.addEventListener('scroll', scrollAnimate);
 		function scrollAnimate() {
 			const scroll: number = window.pageYOffset;
@@ -55,7 +55,6 @@ export function useHeaderAnimations(headerRef: React.RefObject<HTMLElement>, ful
 
 		const sections = document.querySelectorAll('section');
 		window.addEventListener('scroll', highlightLink);
-		highlightLink();
 		function highlightLink() {
 			if (sections != null) {
 				for (let index = 0; index < sections.length; index++) {

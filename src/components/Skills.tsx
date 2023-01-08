@@ -22,11 +22,15 @@ export function Skills() {
 						</div>
 						<div className="skills__block animated-item">
 							<div className="skills__name">TypeScript</div>
-							<div className="skills__level animated-item"><div></div><span>3</span></div>
+							<div className="skills__level animated-item"><div></div><span>3.7</span></div>
 						</div>
 						<div className="skills__block animated-item">
 							<div className="skills__name">React</div>
-							<div className="skills__level animated-item"><div></div><span>3</span></div>
+							<div className="skills__level animated-item"><div></div><span>4.2</span></div>
+						</div>
+						<div className="skills__block animated-item">
+							<div className="skills__name">Redux</div>
+							<div className="skills__level animated-item"><div></div><span>4</span></div>
 						</div>
 						<div className="skills__block animated-item">
 							<div className="skills__name">Python</div>

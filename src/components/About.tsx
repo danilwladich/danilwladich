@@ -13,8 +13,7 @@ export function About() {
 							</h2>
 							<div className="about__text animated-item">
 								I am looking for an internship as a Front-end Developer. Currently I am a first year student at the University of Technology
-								of Warsaw. At the moment I have knowledge in the field of HTML,
-								CSS/SCSS, JavaScript, Python and I want to start working in
+								of Warsaw. At the moment I have knowledge in the field of React Redux, TypeScript and I want to start working in
 								in the field of Front-end Web Development. I know very well
 								Polish, Russian and English at B2 level.
 							</div>

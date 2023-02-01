@@ -188,7 +188,9 @@ button {
 }
 @media (max-width: 767px) {
   .header__logo button {
-    font-size: calc(20px + 6.8 * ((100vw - 280px) / 1200));
+    font-size: calc(
+			20px + 6.8 * ((100vw - 280px) / 1200)
+		);
   }
 }
 @media (min-width: 767px) {
@@ -399,7 +401,9 @@ button {
 }
 @media (min-width: 767px) and (max-width: 767px) {
   .header__link {
-    font-size: calc(16px + 6.8 * ((100vw - 280px) / 1200));
+    font-size: calc(
+			16px + 6.8 * ((100vw - 280px) / 1200)
+		);
   }
 }
 @media (min-width: 767px) and (min-width: 767px) {
@@ -484,7 +488,9 @@ button {
 }
 @media (max-width: 767px) {
   .about__title {
-    font-size: calc(22px + 6.8 * ((100vw - 280px) / 1200));
+    font-size: calc(
+			22px + 6.8 * ((100vw - 280px) / 1200)
+		);
   }
 }
 @media (min-width: 767px) {
@@ -505,7 +511,9 @@ button {
 }
 @media (max-width: 767px) {
   .about__text {
-    font-size: calc(16px + 6.8 * ((100vw - 280px) / 1200));
+    font-size: calc(
+			16px + 6.8 * ((100vw - 280px) / 1200)
+		);
   }
 }
 @media (min-width: 767px) {
@@ -531,7 +539,9 @@ button {
 }
 @media (max-width: 767px) {
   .about__link {
-    font-size: calc(18px + 6.8 * ((100vw - 280px) / 1200));
+    font-size: calc(
+			18px + 6.8 * ((100vw - 280px) / 1200)
+		);
   }
 }
 @media (min-width: 767px) {
@@ -616,7 +626,9 @@ button {
 }
 @media (max-width: 767px) {
   .skills__title {
-    font-size: calc(22px + 6.8 * ((100vw - 280px) / 1200));
+    font-size: calc(
+			22px + 6.8 * ((100vw - 280px) / 1200)
+		);
   }
 }
 @media (min-width: 767px) {
@@ -651,7 +663,9 @@ button {
 }
 @media (max-width: 767px) {
   .skills__name {
-    font-size: calc(16px + 6.8 * ((100vw - 280px) / 1200));
+    font-size: calc(
+			16px + 6.8 * ((100vw - 280px) / 1200)
+		);
   }
 }
 @media (min-width: 767px) {
@@ -716,7 +730,9 @@ button {
 }
 @media (max-width: 767px) {
   .works__title {
-    font-size: calc(22px + 6.8 * ((100vw - 280px) / 1200));
+    font-size: calc(
+			22px + 6.8 * ((100vw - 280px) / 1200)
+		);
   }
 }
 @media (min-width: 767px) {
@@ -763,6 +779,7 @@ button {
           transform: scale(1.2);
 }
 .works__image {
+  background-color: #252525;
   padding: 0px 0px 40% 0px;
   opacity: 0.37;
   -webkit-transition: all 0.8s;
@@ -810,7 +827,9 @@ button {
 }
 @media (max-width: 767px) {
   .works__name {
-    font-size: calc(18px + 6.8 * ((100vw - 280px) / 1200));
+    font-size: calc(
+			18px + 6.8 * ((100vw - 280px) / 1200)
+		);
   }
 }
 @media (min-width: 767px) {
@@ -888,7 +907,9 @@ button {
 }
 @media (max-width: 767px) {
   .hobby__title {
-    font-size: calc(22px + 6.8 * ((100vw - 280px) / 1200));
+    font-size: calc(
+			22px + 6.8 * ((100vw - 280px) / 1200)
+		);
   }
 }
 @media (min-width: 767px) {
@@ -909,7 +930,9 @@ button {
 }
 @media (max-width: 767px) {
   .hobby__text {
-    font-size: calc(16px + 6.8 * ((100vw - 280px) / 1200));
+    font-size: calc(
+			16px + 6.8 * ((100vw - 280px) / 1200)
+		);
   }
 }
 @media (min-width: 767px) {
@@ -1014,7 +1037,9 @@ button {
 }
 @media (max-width: 767px) {
   .footer__copy {
-    font-size: calc(16px + 6.8 * ((100vw - 280px) / 1200));
+    font-size: calc(
+			16px + 6.8 * ((100vw - 280px) / 1200)
+		);
   }
 }
 @media (min-width: 767px) {

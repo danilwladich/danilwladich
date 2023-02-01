@@ -5,7 +5,9 @@ $maxWidth: 1200;
 	$addSize: $maxSize - $minSize;
 	$addMinSize: $addSize + $addSize * 0.7;
 	@media (max-width: 767px) {
-		font-size: calc(#{$minSize + px} + #{$addMinSize} * ((100vw - 280px) / #{$maxWidth}));
+		font-size: calc(
+			#{$minSize + px} + #{$addMinSize} * ((100vw - 280px) / #{$maxWidth})
+		);
 	}
 	@media (min-width: 767px) {
 		font-size: calc(#{$minSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
@@ -39,7 +41,8 @@ button {
 }
 .container {
 	max-width: #{$maxWidth + px};
-	padding: 0 calc(15px + env(safe-area-inset-right)) 0 calc(15px + env(safe-area-inset-left));
+	padding: 0 calc(15px + env(safe-area-inset-right)) 0
+		calc(15px + env(safe-area-inset-left));
 	margin: 0 auto;
 	@media (max-width: #{$maxWidth+ px}) {
 		max-width: calc(#{$maxWidth+ px} - 150px);
@@ -527,6 +530,7 @@ button {
 		}
 	}
 	&__image {
+		background-color: #252525;
 		padding: 0px 0px 40% 0px;
 		img {
 			width: 100%;

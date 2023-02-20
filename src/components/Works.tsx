@@ -8,7 +8,7 @@ export function Works() {
 					<h2 className="works__title animated-item">My works</h2>
 					<div className="works__row">
 						<a
-							href="http://46.41.137.197/"
+							href="http://bloxx.com.pl/"
 							target="_blank"
 							rel="noreferrer"
 							className="works__item"

@@ -1,7 +1,9 @@
-### Front-End Developer
+## Front-End Developer
 
-#### Next, React, TypeScript
-##### NodeJs, Sql, WebSockets
+
+### NextJs, React, TypeScript
+#### NodeJs, Sql, WebSockets, Python
+
 
 #### http://bloxx.com.pl/
 

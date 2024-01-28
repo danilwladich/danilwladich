@@ -1,6 +1,7 @@
 ### Front-End Developer
 
-#### React, Redux, TypeScript
+#### Next, React, TypeScript
+##### NodeJs, Sql, WebSockets
 
 #### http://bloxx.com.pl/
 

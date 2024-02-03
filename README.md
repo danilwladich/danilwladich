@@ -5,6 +5,6 @@
 #### NodeJs, Sql, WebSockets, Python
 
 
-#### http://bloxx.com.pl/
+#### http://46.41.137.197
 
 ![codding](https://user-images.githubusercontent.com/118133808/216460442-608378b9-6cf0-4cc3-a763-2fb402fc19c1.gif)

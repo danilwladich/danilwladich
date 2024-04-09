@@ -2,7 +2,7 @@
 
 
 ### NextJs, React, TypeScript
-#### NodeJs, Sql, WebSockets, Python
+#### NodeJs, WebSockets, Python
 
 
 #### Bloxx: http://46.41.137.197

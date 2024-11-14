@@ -1,8 +1,8 @@
-## Front-End Developer
+## Full Stack Developer
 
 
-### NextJs, React, TypeScript
-#### NodeJs, WebSockets, Python, leaflet, i18n, Redux
+### Next.js, React, Angular, NestJS, TypeScript
+#### NodeJs, WebSockets, Python
 
 
 #### streetspace: https://streetspace.online
